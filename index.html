@@ -9,7 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
       rel="stylesheet"
     />
     <style>
@@ -18,105 +18,146 @@
         margin: 0;
         padding: 0;
       }
+
       body {
-        font-family: "Inter", sans-serif;
-        background-color: #0f172a;
-        color: #f1f5f9;
+        font-family: "Fira Code", monospace;
+        background-color: #1e1e1e;
+        color: #d4d4d4;
         display: flex;
       }
+
       aside {
-        width: 260px;
-        background-color: #1e293b;
+        width: 280px;
+        background-color: #252526;
         padding: 40px 20px;
         height: 100vh;
         position: fixed;
+        text-align: center;
       }
+
+      aside img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid #007acc;
+        margin-bottom: 20px;
+      }
+
       aside h1 {
-        font-size: 1.8rem;
-        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+        color: #9cdcfe;
+        margin-bottom: 0.25rem;
       }
+
       aside p {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        color: #ce9178;
         margin-bottom: 1.5rem;
-        color: #94a3b8;
       }
+
       nav a {
         display: block;
-        color: #f1f5f9;
+        color: #d4d4d4;
         text-decoration: none;
         margin: 10px 0;
         font-weight: 500;
+        transition: 0.3s;
       }
+
       nav a:hover {
-        color: #60a5fa;
+        color: #569cd6;
       }
+
+      .socials {
+        margin-top: 30px;
+      }
+
+      .socials a {
+        color: white;
+        margin: 0 8px;
+        font-size: 1.2rem;
+      }
+
       main {
-        margin-left: 260px;
+        margin-left: 280px;
         padding: 40px;
         width: 100%;
       }
+
       section {
         margin-bottom: 60px;
       }
+
       section h2 {
-        font-size: 2rem;
-        border-left: 4px solid #60a5fa;
+        font-size: 1.5rem;
+        border-left: 4px solid #007acc;
         padding-left: 12px;
         margin-bottom: 20px;
+        color: #9cdcfe;
       }
+
       .projects,
       .skills {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 20px;
       }
+
       .card {
-        background-color: #1e293b;
+        background-color: #2d2d2d;
         padding: 20px;
         border-radius: 10px;
-        border: 1px solid #334155;
+        border: 1px solid #3c3c3c;
         transition: transform 0.3s ease;
       }
+
       .card:hover {
         transform: translateY(-5px);
       }
+
       .card h3 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        color: #4ec9b0;
         margin-bottom: 10px;
       }
+
       .card p {
-        font-size: 0.95rem;
-        color: #cbd5e1;
+        font-size: 0.9rem;
+        color: #cccccc;
       }
+
       .card a {
         display: inline-block;
         margin-top: 8px;
-        color: #60a5fa;
+        color: #569cd6;
         text-decoration: none;
       }
+
       .card a:hover {
         text-decoration: underline;
       }
+
       .skills div {
-        background-color: #334155;
+        background-color: #3c3c3c;
         padding: 12px;
         text-align: center;
         border-radius: 8px;
         font-weight: 500;
       }
+
       footer {
         text-align: center;
         padding: 20px;
-        color: #94a3b8;
-        border-top: 1px solid #334155;
-      }
-      .fab {
-        color: white;
+        color: #808080;
+        border-top: 1px solid #3c3c3c;
       }
     </style>
   </head>
+
   <body>
     <aside>
+      <img src="profile.jpg" alt="Yousef Mankoulah" />
       <h1>Yousef Mankoulah</h1>
       <p>Full-Stack Software Engineer</p>
       <nav>
@@ -124,16 +165,13 @@
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
-      <div style="margin-top: 30px">
+      <div class="socials">
         <a
           href="https://linkedin.com/in/yousef-mankoulah-967a9913b"
           target="_blank"
           ><i class="fab fa-linkedin"></i
         ></a>
-        <a
-          href="https://github.com/yousefmankoulah"
-          target="_blank"
-          style="margin-left: 10px"
+        <a href="https://github.com/yousefmankoulah" target="_blank"
           ><i class="fab fa-github"></i
         ></a>
       </div>
@@ -146,8 +184,8 @@
           <div class="card">
             <h3>ZestPOS</h3>
             <p>
-              POS SaaS app with React, Node.js, PostgreSQL, AWS (EC2, VPC, R53,
-              Beanstalk, CloudFront)
+              POS SaaS app with React, Node.js, PostgreSQL, AWS EC2, VPC, R53,
+              Beanstalk, CloudFront.
             </p>
             <a href="https://zestposrestaurants.com" target="_blank"
               >Visit Site</a
@@ -155,21 +193,21 @@
           </div>
           <div class="card">
             <h3>Ben Driving School</h3>
-            <p>Driving school website)</p>
+            <p>Business website for a driving school in Philly.</p>
             <a href="https://bendrivingschoolphilly.com" target="_blank"
               >Visit Site</a
             >
           </div>
           <div class="card">
             <h3>Virginia Garage Doors</h3>
-            <p>Garage Door website for a company located in Virginia)</p>
+            <p>Company website for garage doors in Virginia.</p>
             <a href="https://www.virginiagaragedoorsllc.com" target="_blank"
               >Visit Site</a
             >
           </div>
           <div class="card">
-            <h3>Prepare Aviation maintenance (iOS)</h3>
-            <p>iOS app forAviation maintenance certifications practice.</p>
+            <h3>Prepare Aviation Maintenance (iOS)</h3>
+            <p>Practice app for aviation maintenance certifications (iOS).</p>
             <a
               href="https://apps.apple.com/us/app/prepare-aviation-maintenance/id6739513820"
               target="_blank"
@@ -177,10 +215,8 @@
             >
           </div>
           <div class="card">
-            <h3>Shake it Off - Move it up (iOS)</h3>
-            <p>
-              iOS app for tracking your steps and send you funny notifications.
-            </p>
+            <h3>Shake it Off - Move it Up (iOS)</h3>
+            <p>Step tracker app with fun push notifications (iOS).</p>
             <a
               href="https://apps.apple.com/us/app/shake-it-off-move-it-up/id6739794202"
               target="_blank"
@@ -189,7 +225,10 @@
           </div>
           <div class="card">
             <h3>AWS Exam Prep (iOS)</h3>
-            <p>iOS app for AWS Solutions Architect certification practice.</p>
+            <p>
+              Practice questions app for AWS Solutions Architect certification
+              (iOS).
+            </p>
             <a
               href="https://apps.apple.com/us/app/aws-solutions-architect-exams/id6744304494"
               target="_blank"
@@ -198,7 +237,7 @@
           </div>
           <div class="card">
             <h3>FE Civil Exam Prep (iOS)</h3>
-            <p>iOS app for FE Civil Engineering exam preparation.</p>
+            <p>Study app for FE Civil Engineering exam (iOS).</p>
             <a
               href="https://apps.apple.com/us/app/prepare-fe-civil-exam/id6739725355"
               target="_blank"
@@ -207,17 +246,18 @@
           </div>
           <div class="card">
             <h3>TOEFL Prep (iOS)</h3>
-            <p>iOS app for TOEFL language exam prep.</p>
+            <p>iOS study app for TOEFL exam prep with question bank.</p>
             <a
               href="https://apps.apple.com/us/app/prepare-toefl-exam/id6740041733"
               target="_blank"
               >App Store</a
             >
           </div>
-
           <div class="card">
             <h3>Aviation Prep (Android)</h3>
-            <p>Android app for aviation maintenance prep (React Native).</p>
+            <p>
+              Android version of aviation certification prep using React Native.
+            </p>
             <a
               href="https://play.google.com/store/apps/details?id=com.mankoulah.aviation"
               target="_blank"
@@ -226,7 +266,7 @@
           </div>
           <div class="card">
             <h3>FE Civil Prep (Android)</h3>
-            <p>Android app for FE CIVIL prep (React Native).</p>
+            <p>Android app for FE Civil practice (React Native).</p>
             <a
               href="https://play.google.com/store/apps/details?id=com.mankoulah.fe"
               target="_blank"
@@ -240,8 +280,18 @@
         <h2>Skills</h2>
         <div class="skills">
           <div>Node.js</div>
+          <div>ExpressJs</div>
           <div>React.js</div>
           <div>PostgreSQL</div>
+          <div>Django</div>
+          <div>Redux</div>
+          <div>Bootstrap</div>
+          <div>MySQL</div>
+          <div>Rest APIs</div>
+          <div>HTML</div>
+          <div>CSS</div>
+          <div>React Native</div>
+          <div>Swift UI</div>
           <div>Swift / iOS</div>
           <div>Firebase</div>
           <div>MongoDB</div>
@@ -252,7 +302,7 @@
           <div>Elastic Beanstalk</div>
           <div>CloudFront</div>
           <div>CI/CD</div>
-          <div>Airflow / DBT</div>
+          <div>Manual Testing</div>
           <div>Python / Pandas</div>
         </div>
       </section>
@@ -261,7 +311,7 @@
         <h2>Contact</h2>
         <p>
           Email:
-          <a href="mailto:yousef.mankola10@gmail.com" style="color: #60a5fa"
+          <a href="mailto:yousef.mankola10@gmail.com" style="color: #569cd6"
             >yousef.mankola10@gmail.com</a
           >
         </p>
