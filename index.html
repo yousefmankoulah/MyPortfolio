@@ -169,6 +169,44 @@
         color: #808080;
         border-top: 1px solid #3c3c3c;
       }
+
+      @media (max-width: 768px) {
+        body {
+          flex-direction: column;
+        }
+
+        aside {
+          position: relative;
+          width: 100%;
+          height: auto;
+          padding: 20px;
+        }
+
+        main {
+          margin-left: 0;
+          padding: 20px;
+        }
+
+        .projects,
+        .skills,
+        .education {
+          grid-template-columns: 1fr;
+        }
+
+        .resume-btn {
+          width: 100%;
+          text-align: center;
+        }
+
+        nav a {
+          display: inline-block;
+          margin: 5px 10px;
+        }
+
+        .socials {
+          margin-top: 15px;
+        }
+      }
     </style>
   </head>
 
