@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yousef Mankoulah | Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #0f172a;
+        color: #f1f5f9;
+        display: flex;
+      }
+      aside {
+        width: 260px;
+        background-color: #1e293b;
+        padding: 40px 20px;
+        height: 100vh;
+        position: fixed;
+      }
+      aside h1 {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+      }
+      aside p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        color: #94a3b8;
+      }
+      nav a {
+        display: block;
+        color: #f1f5f9;
+        text-decoration: none;
+        margin: 10px 0;
+        font-weight: 500;
+      }
+      nav a:hover {
+        color: #60a5fa;
+      }
+      main {
+        margin-left: 260px;
+        padding: 40px;
+        width: 100%;
+      }
+      section {
+        margin-bottom: 60px;
+      }
+      section h2 {
+        font-size: 2rem;
+        border-left: 4px solid #60a5fa;
+        padding-left: 12px;
+        margin-bottom: 20px;
+      }
+      .projects,
+      .skills {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+      }
+      .card {
+        background-color: #1e293b;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #334155;
+        transition: transform 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+      }
+      .card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+      }
+      .card p {
+        font-size: 0.95rem;
+        color: #cbd5e1;
+      }
+      .card a {
+        display: inline-block;
+        margin-top: 8px;
+        color: #60a5fa;
+        text-decoration: none;
+      }
+      .card a:hover {
+        text-decoration: underline;
+      }
+      .skills div {
+        background-color: #334155;
+        padding: 12px;
+        text-align: center;
+        border-radius: 8px;
+        font-weight: 500;
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        color: #94a3b8;
+        border-top: 1px solid #334155;
+      }
+    </style>
+  </head>
+  <body>
+    <aside>
+      <h1>Yousef Mankoulah</h1>
+      <p>Full-Stack Software Engineer</p>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div style="margin-top: 30px">
+        <a
+          href="https://linkedin.com/in/yousef-mankoulah-967a9913b"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          href="https://github.com/yousefmankoulah"
+          target="_blank"
+          style="margin-left: 10px"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+    </aside>
+
+    <main>
+      <section id="projects">
+        <h2>Live Projects</h2>
+        <div class="projects">
+          <div class="card">
+            <h3>ZestPOS</h3>
+            <p>
+              POS SaaS app with React, Node.js, PostgreSQL, AWS (EC2, VPC, R53,
+              Beanstalk, CloudFront)
+            </p>
+            <a href="https://zestposrestaurants.com" target="_blank"
+              >Visit Site</a
+            >
+          </div>
+          <div class="card">
+            <h3>AWS Exam Prep (iOS)</h3>
+            <p>iOS app for AWS Solutions Architect certification practice.</p>
+            <a
+              href="https://apps.apple.com/us/app/aws-solutions-architect-exams/id6744304494"
+              target="_blank"
+              >App Store</a
+            >
+          </div>
+          <div class="card">
+            <h3>FE Civil Exam Prep (iOS)</h3>
+            <p>iOS app for FE Civil Engineering exam preparation.</p>
+            <a
+              href="https://apps.apple.com/us/app/prepare-fe-civil-exam/id6739725355"
+              target="_blank"
+              >App Store</a
+            >
+          </div>
+          <div class="card">
+            <h3>TOEFL Prep (iOS)</h3>
+            <p>iOS app for TOEFL language exam prep.</p>
+            <a
+              href="https://apps.apple.com/us/app/prepare-toefl-exam/id6740041733"
+              target="_blank"
+              >App Store</a
+            >
+          </div>
+          <div class="card">
+            <h3>Shake It Off – Move it Up</h3>
+            <p>iOS Swift app using device motion for fun workouts.</p>
+            <a
+              href="https://apps.apple.com/us/app/shake-it-off-move-it-up/id6739794202"
+              target="_blank"
+              >App Store</a
+            >
+          </div>
+          <div class="card">
+            <h3>Aviation Prep (Android)</h3>
+            <p>Android app for aviation maintenance prep (React Native).</p>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.mankoulah.aviation"
+              target="_blank"
+              >Play Store</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+          <div>Node.js</div>
+          <div>React.js</div>
+          <div>PostgreSQL</div>
+          <div>Swift / iOS</div>
+          <div>Firebase</div>
+          <div>MongoDB</div>
+          <div>Tailwind CSS</div>
+          <div>Stripe API</div>
+          <div>Playwright / Postman</div>
+          <div>AWS EC2 / VPC / R53</div>
+          <div>Elastic Beanstalk</div>
+          <div>CloudFront</div>
+          <div>CI/CD</div>
+          <div>Airflow / DBT</div>
+          <div>Python / Pandas</div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          Email:
+          <a href="mailto:yousef.mankola10@gmail.com" style="color: #60a5fa"
+            >yousef.mankola10@gmail.com</a
+          >
+        </p>
+        <p>Phone: (609) 516-7320</p>
+        <p>Location: Philadelphia, PA</p>
+      </section>
+
+      <footer>
+        <p>&copy; 2025 Yousef Mankoulah. All rights reserved.</p>
+      </footer>
+    </main>
+  </body>
+</html>
