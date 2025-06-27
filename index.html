@@ -36,12 +36,29 @@
       }
 
       aside img {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
         object-fit: cover;
+        object-position: center;
         border-radius: 50%;
         border: 3px solid #007acc;
         margin-bottom: 20px;
+      }
+
+      .resume-btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 16px;
+        background-color: #007acc;
+        color: white;
+        border-radius: 5px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: background 0.3s;
+      }
+
+      .resume-btn:hover {
+        background-color: #005a9e;
       }
 
       aside h1 {
@@ -157,7 +174,7 @@
 
   <body>
     <aside>
-      <img src="profile.jpg" alt="Yousef Mankoulah" />
+      <img src="assets/2.jpg" alt="Yousef Mankoulah" />
       <h1>Yousef Mankoulah</h1>
       <p>Full-Stack Software Engineer</p>
       <nav>
@@ -336,6 +353,12 @@
         </p>
         <p>Phone: (609) 516-7320</p>
         <p>Location: Philadelphia, PA</p>
+        <a
+          href="Yousef_Mankoulah_Software_Engineer_Resume.pdf"
+          download
+          class="resume-btn"
+          >📄 Download Resume</a
+        >
       </section>
 
       <footer>
